@@ -1,91 +1,108 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
-  }
-  
-  body {
-    background-color: #111827;
-  }
-  
-  body .formContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10em;
-    margin-left: 30em;
-    margin-right: 30em;
-    /* border: solid 1px black; */
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px;
-    text-align: center;
-    background-color: #ffffff;
-  }
-  
-  body .formContainer h1 {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    color: rgb(62, 61, 61);
-  }
-  
+}
+
+body {
+  background-color: #111827;
+}
+
+body .formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10em;
+  margin-left: 30em;
+  margin-right: 30em;
+  /* border: solid 1px black; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+body .formContainer h1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: rgb(62, 61, 61);
+}
+
+.submitBtn {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 1.5rem;
+  padding: 0.1rem 1rem;
+  text-align: center;
+  text-decoration: none #6b7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.submitBtn:hover {
+  background-color: #374151;
+}
+
+.submitBtn:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
   .submitBtn {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    background-color: #111827;
-    border: 1px solid transparent;
-    border-radius: 0.75rem;
-    box-sizing: border-box;
-    color: #ffffff;
-    cursor: pointer;
-    flex: 0 0 auto;
-    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui,
-      "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1.2rem;
-    font-weight: 200;
-    line-height: 1.5rem;
-    padding: 0.1rem 1rem;
-    text-align: center;
-    text-decoration: none #6b7280 solid;
-    text-decoration-thickness: auto;
-    transition-duration: 0.2s;
-    transition-property: background-color, border-color, color, fill, stroke;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: auto;
+    padding: 0.75rem 1.5rem;
   }
-  
-  .submitBtn:hover {
-    background-color: #374151;
-  }
-  
-  .submitBtn:focus {
-    box-shadow: none;
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-  
-  @media (min-width: 768px) {
-    .submitBtn {
-      padding: 0.75rem 1.5rem;
-    }
-  }
-  
-  .cardContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    margin: 10em;
-    margin-left: 30em;
-    margin-right: 30em;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px;
-    text-align: center;
-    background-color: #ffffff;
-  }
-  
+}
+
+#card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10em;
+  margin-left: 30em;
+  margin-right: 30em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 1.5em;
+}
+
+p {
+  font-size: 16px;
+  margin: 2em 2em 2em 2em;
+  color: black;
+}
+
+.button {
+  margin: 2em 2em 2em 2em;
+}
