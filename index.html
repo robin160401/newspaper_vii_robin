@@ -3,47 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="#" href="#" />
+    <link rel="stylesheet" href="src/formstyle.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="/src/main.ts" defer></script>
-    <title>Vite + TS</title>
+    <title>Newspaper</title>
   </head>
   <body>
-    <h1>NEWS PAPER</h1>
-    <form id="form" action="">
-      <div>
-        <label>Suchbegriff: <input type="text" id="input"/></label>
-      </div>
-      <div>
-        <label>Sprache:</label>
-        <select name="sprachen" id="language">
-          <option value="ar">Arabisch</option>
-          <option value="de" selected>Deutsch</option>
-          <option value="en">Englisch</option>
-          <option value="es">Spanisch</option>
-          <option value="fr">Französisch</option>
-          <option value="he">Hebräisch</option>
-          <option value="it">Italienisch</option>
-          <option value="nl">Niederländisch</option>
-          <option value="no">Norwegisch</option>
-          <option value="pt">Portugisisch</option>
-          <option value="ru">Russisch</option>
-          <option value="sv">Schwedisch</option>
-          <option value="zh">Chinesisch</option>
-        </select>
-      </div>
-      <div>
-        <label>Sortieren nach:</label>
-        <select name="sort" id="sortBy">
-          <option value="relevancy">Relevanz</option>
-          <option value="popularity">Popularität</option>
-          <option value="publishedAt">Neuste zuerst</option>
-        </select>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
+    <div class="formContainer">
+      <h1>NEWS PAPER</h1>
+      <form id="form" action="">
+        <div>
+          <label>Suchbegriff: <input type="text" id="input" /></label>
+        </div>
+        <div>
+          <label>Sprache:</label>
+          <select name="sprachen" id="language">
+            <option value="ar">Arabisch</option>
+            <option value="de" selected>Deutsch</option>
+            <option value="en">Englisch</option>
+            <option value="es">Spanisch</option>
+            <option value="fr">Französisch</option>
+            <option value="he">Hebräisch</option>
+            <option value="it">Italienisch</option>
+            <option value="nl">Niederländisch</option>
+            <option value="no">Norwegisch</option>
+            <option value="pt">Portugisisch</option>
+            <option value="ru">Russisch</option>
+            <option value="sv">Schwedisch</option>
+            <option value="zh">Chinesisch</option>
+          </select>
+        </div>
+<div class="sortConatiner">
+          <label>Sortieren nach:</label>
+          <select name="sort" id="sortBy">
+            <option value="relevancy">Relevanz</option>
+            <option value="popularity">Popularität</option>
+            <option value="publishedAt">Neuste zuerst</option>
+          </select>
+        </div>
+        <button type="submit" class="submitBtn">Submit</button>
+      </form>
+    </div>
 
     <div id="cardContainer">
-      <div id="card">
+      <div id="card" style="display: none">
         <h2 class="title"></h2>
         <p class="text"></p>
         <img class="img" src="#" alt="#" />
@@ -52,4 +55,5 @@
     </div>
   </body>
 </html>
+
 

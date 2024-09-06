@@ -27,6 +27,7 @@ function fetchArticles() {
       console.log(data);
       data.articles.forEach((article: IArticle) => {
           const cardClone = document.querySelector("#card")!.cloneNode(true) as HTMLElement;
+          cardClone.style.display = "block";
           (cardClone.querySelector(".text") as HTMLParagraphElement).textContent = article.title;
           (cardClone.querySelector(".img") as HTMLImageElement).src = article.urlToImage;
           (cardClone.querySelector(".btnLink") as HTMLAnchorElement).href = article.url;
